@@ -1,0 +1,3 @@
+Osnovna angular aplikacija
+
+Pred spremembami
