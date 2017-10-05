@@ -1,3 +1,4 @@
-Osnovna angular aplikacija
+Drugi del
 
-Pred spremembami
+ngFor, ngIf, ngModule, uporabo "pajpov" ( | ), zdruzevanje pajpov v
+verigo in pisanje costum pajpa

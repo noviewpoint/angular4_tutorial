@@ -7,15 +7,27 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
-  mojObjekt = {
-    "lastnost1": 123,
-    "lastnost2": "beseda"
+  naloge = ["AngularJS (1)", "React", "Node.js", "Express.js", "Python", "C# .NET", "vanilla JavaScript"];
+  novaNaloga = "začetna vrednost";
+  pushNaloga = function() {
+    if (this.novaNaloga !== "") {
+      this.naloge.push(this.novaNaloga);
+      this.novaNaloga = "";
+    }
   };
+  spliceNaloga = function(index) {
+    this.naloge.splice(index, 1);
+  }
+  dogodekDodajanja(event) {
+    console.log(event);
+    this.pushNaloga();
+  }
 
-  matrika = [1, 2, 3, 4, 5, 6, 7];
+  dogodekBrisanja(index) {
+    this.spliceNaloga(index);
+  }
+  name = "shit";
+  datum = Date.now();
 
-  zastavica = false;
-  mojeIme = "David";
-
-
+  seznam = [3, 7, 8, 2, 1];
 }
