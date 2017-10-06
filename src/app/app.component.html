@@ -1,20 +1,23 @@
-<div class="osrednji">
-  <h1>Naloge:</h1>
-  <div class="dodajNalogo">
-    <input [(ngModel)] = "novaNaloga" placeholder="Dodaj nalogo" class="dodajBesedilo">
-    <button (click)="dogodekDodajanja($event)" >Dodaj</button>
-  </div>
+<!-- TEMPLATE DRIVEN FORM -->
+<!-- <form (ngSubmit) = "oddajObrazec(blaForm.value);" #blaForm = "ngForm" class="container">
+  <input type="text" name="firstName" placeholder="Vpiš svoje ime" ngModel>
+  <input type="text" name="lastName" placeholder="Vpiš svoj priimk" ngModel>
+  <select name="jeziki" ngModel>
+    <option value="C++">C++</option>
+    <option value="Swift">Swift</option>
+    <option value="Java">Java</option>
+  </select>
+  <input type="submit" value="submit">
+</form> -->
 
-  <ul>
-    <li *ngFor="let i of naloge; let ind = index">{{i}}<button (click)="dogodekBrisanja(ind)">x</button></li>
-  </ul>
-</div>
-
-<h2>{{name | lowercase}}</h2>
-<h2>{{name | uppercase}}</h2>
-<h2>{{datum}}</h2>
-<h2>{{datum | date}}</h2>
-<h2>{{datum | date: 'shortDate'}}</h2>
-<h2>{{datum | date: 'fullDate' | uppercase}}</h2>
-<h2>To bo seznam števil:</h2>
-<h2>{{seznam | sort: 'descending'}}</h2>
+<!-- MODEL DRIVEN FORM -->
+<form [formGroup] = "obrazec"  (ngSubmit) = "oddajObrazec(obrazec.value);" class="container">
+  <input type="text" name="prvoime" placeholder="Vpiši svoje ime" formControlName="prvoime">
+  <input type="text" name="zadnjeIme" placeholder="Vpiši svoj priimek" formControlName="zadnjeime">
+  <select name="jeziki" formControlName="jeziki">
+    <option value="C++">C++</option>
+    <option value="Swift">Swift</option>
+    <option value="Java">Java</option>
+  </select>
+  <input type="submit" value="submit">
+</form>

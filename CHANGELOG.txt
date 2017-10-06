@@ -1,4 +1,4 @@
-Drugi del
+Tretji del
 
-ngFor, ngIf, ngModule, uporabo "pajpov" ( | ), zdruzevanje pajpov v
-verigo in pisanje costum pajpa
+Formi z FormsModule (template driven form) in z ReactiveFormsModule
+(model driven form).
