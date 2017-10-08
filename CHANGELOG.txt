@@ -1,4 +1,3 @@
-Tretji del
+Cetrti del
 
-Formi z FormsModule (template driven form) in z ReactiveFormsModule
-(model driven form).
+Form z realtime pretvorbami med stevilskimi sistemi

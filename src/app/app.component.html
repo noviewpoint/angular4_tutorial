@@ -1,23 +1,8 @@
-<!-- TEMPLATE DRIVEN FORM -->
-<!-- <form (ngSubmit) = "oddajObrazec(blaForm.value);" #blaForm = "ngForm" class="container">
-  <input type="text" name="firstName" placeholder="Vpiš svoje ime" ngModel>
-  <input type="text" name="lastName" placeholder="Vpiš svoj priimk" ngModel>
-  <select name="jeziki" ngModel>
-    <option value="C++">C++</option>
-    <option value="Swift">Swift</option>
-    <option value="Java">Java</option>
-  </select>
-  <input type="submit" value="submit">
-</form> -->
-
 <!-- MODEL DRIVEN FORM -->
-<form [formGroup] = "obrazec"  (ngSubmit) = "oddajObrazec(obrazec.value);" class="container">
-  <input type="text" name="prvoime" placeholder="Vpiši svoje ime" formControlName="prvoime">
-  <input type="text" name="zadnjeIme" placeholder="Vpiši svoj priimek" formControlName="zadnjeime">
-  <select name="jeziki" formControlName="jeziki">
-    <option value="C++">C++</option>
-    <option value="Swift">Swift</option>
-    <option value="Java">Java</option>
-  </select>
-  <input type="submit" value="submit">
+<form [formGroup]="obrazec"  (ngSubmit)="oddajObrazec(obrazec.value);" class="container">
+  <input (ngModelChange) = "vpisanaDecimalna(oldValue, newValue = $event);" type="text" name="decimalna stevilka" placeholder="Decimalno število" formControlName="decimalno">
+  <input (ngModelChange) = "vpisanaBinarna(oldValue, newValue = $event);" type="text" name="binarna stevilka" placeholder="Binarno število" formControlName="binarno">
+  <input (ngModelChange) = "vpisanaOsmiska(oldValue, newValue = $event);" type="text" name="osmiska stevilka" placeholder="Osmiško število" formControlName="osmisko">
+  <input (ngModelChange) = "vpisanaSestnajstiska(oldValue, newValue = $event);" type="text" name="sestnajstiska stevilka" placeholder="Šestnajstiško število" formControlName="sestnajstisko">
+  <!-- <input type="submit"> -->
 </form>
