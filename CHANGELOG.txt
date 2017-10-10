@@ -1,3 +1,4 @@
-Cetrti del
+Peti del
 
-Form z realtime pretvorbami med stevilskimi sistemi
+Dodal validacijo inputov na formu z vgrajeno angular in costum
+funkcijo. Dodal service, ki ga delim med dvema komponentama.

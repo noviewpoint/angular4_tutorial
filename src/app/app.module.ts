@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { MojServiceService } from './moj-service.service';
 import { MojaLepaKomponentaComponent } from './moja-lepa-komponenta/moja-lepa-komponenta.component';
 import { ProductComponent } from './product/product.component';
 import { MembersComponent } from './members/members.component';
@@ -35,7 +36,7 @@ import { SortPipe } from './app.sort';
       
     ])
   ],
-  providers: [],
+  providers: [MojaLepaKomponentaComponent, MojServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
