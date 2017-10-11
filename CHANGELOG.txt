@@ -1,5 +1,3 @@
-Sesti del
+Sedmi del
 
-Uporaba http modula.
-
-Fake podatki iz: https://www.json-generator.com/#
+Uporaba animations modula.

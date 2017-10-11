@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 // import { FormsModule } from '@angular/forms';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { MojServiceService } from './moj-service.service';
@@ -25,6 +26,7 @@ import { SortPipe } from './app.sort';
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
+    BrowserAnimationsModule,
     HttpModule,
     RouterModule.forRoot([
       {
