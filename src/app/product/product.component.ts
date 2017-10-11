@@ -13,7 +13,9 @@ export class ProductComponent implements OnInit {
   izpis;
   ngOnInit() {
     console.log(this.new2Service.objekt);
-    this.izpis = this.new2Service.objekt;
+    // this.izpis = this.new2Service.objekt;
+
+    this.izpis = this.new2Service.vrnilPodatke();
 
     console.log(this.new2Service.variabla);
   }

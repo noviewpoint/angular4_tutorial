@@ -1,4 +1,5 @@
-Peti del
+Sesti del
 
-Dodal validacijo inputov na formu z vgrajeno angular in costum
-funkcijo. Dodal service, ki ga delim med dvema komponentama.
+Uporaba http modula.
+
+Fake podatki iz: https://www.json-generator.com/#

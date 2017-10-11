@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 // import { FormsModule } from '@angular/forms';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { MojServiceService } from './moj-service.service';
@@ -12,7 +13,7 @@ import { MembersComponent } from './members/members.component';
 
 import { SortPipe } from './app.sort';
 
-@NgModule({
+@NgModule({ // tukaj so samo pipe in component! (servisi ne)
   declarations: [
     SortPipe,
     AppComponent,
@@ -24,6 +25,7 @@ import { SortPipe } from './app.sort';
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpModule,
     RouterModule.forRoot([
       {
         path: 'member',
